@@ -18,10 +18,10 @@ function download_data() {
     */
     function download_data() {
         //let loghead = "name,age,success,fish_num,clear_time,distance";
-        let loghead = "名前,年齢,成功/失敗,獲得した魚の数,クリア時間,到達距離";
+        let loghead = "名前,年齢,成功/失敗,獲得した魚の数,クリア時間,到達距離\n";
         let logdata = "";
         datas.map(function (d) {
-            logdata += d.name+","+d.age+","+d.success+","+d.fish_num+","+d.clear_time +","+d.distance;
+            logdata += d.name+","+d.age+","+d.success+","+d.fish_num+","+d.clear_time +","+d.distance + "\n";
         });
    
 
